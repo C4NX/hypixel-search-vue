@@ -9,6 +9,6 @@ const setSearch = (x) => search.value = x
 
 <template>
   <h1>Hypixel Player Search</h1>
-  <SearchText :on-search="setSearch" />
+  <SearchText @search="setSearch" />
   <HypixelPlayerCard :username="search" />
 </template>
